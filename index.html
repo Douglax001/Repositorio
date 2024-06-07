@@ -16,11 +16,12 @@
 </head>
 <body>
     <header>
-        <ul>
+        <ul class="menu">
             <a href="#home">Home</a>
             <a href="#projetos">Projetos</a>
-            <a href="#contatos">Contatos<a>
+            <a href="#contact">Contatos</a>
         </ul>
+        <img id="img_menu" src="assets/icons/menu.png" alt="Menu" onclick="toggleMenu()">
     </header>
     <main>
         <div class="home" id="home">
@@ -31,24 +32,24 @@
                             <h1 class="line typing-animation">Douglas Lima</h1>
                         </li>
                         <h2>Front-End Developer</h2>
-                        <p class="info-p">Bem vindo ao meu portfólio! Meu nome é Douglas e estudo para futuramente trabalhar como Front End Developer. Nessa página você vai encontrar meus projetos pessoais, minhas skills e minhas informações de contato.</p>
+                    <p class="infos-p">Bem vindo ao meu portfólio! Meu nome é Douglas e estudo para futuramente trabalhar como Front End Developer. Nessa página você vai encontrar meus projetos pessoais, minhas skills e minhas informações de contato.</p>
                 </div>
             </div>
 
-            <div class="containerFront direita">
+            <div class="containerFront direita" data-aos="flip-left">
                 <img id="img_logo" src="assets/logo/logo.png">
             </div>
         </div>
 
-        <h1 class="links">PROJETOS</h1>
+        <h1 class="links" data-aos="fade-up">PROJETOS</h1>
         <div class="projetos" id="projetos">
             <div class="repositorio">
-                <div class="projeto_direita">
+                <div class="projeto_direita project">
                     <div class="left">
-                        <img class="left_img img_pm" src="assets/projetos/login_dragon/tela_de_login_dragon_mob.png">
+                        <img class="left_img img_pm" src="assets/projetos/login_dragon/tela_de_login_dragon_mob.png" data-aos="fade-up" data-aos-delay="200">
                     </div>
                     <div class="rigth">
-                        <img class="left_img img_p" id="img_login_dragon" src="assets/projetos/login_dragon/tela_de_login_dragon.png">
+                        <img class="left_img img_p" id="img_login_dragon" src="assets/projetos/login_dragon/tela_de_login_dragon.png" data-aos="flip-left">
 
                         <div class="descricao">
                             <p>TELA DE LOGIN</p>
@@ -58,7 +59,8 @@
                                 <img src="assets/linguagens/html5.png" class="p_html5">
                                 <img src="assets/linguagens/css3.png" class="p_css3">
                             </div>
-                            <p class="descricao_p">Projeto de uma painel de acesso, tela sem poluição de texto sendo objetivo, busca trazer um designer mais intuitivo para o usuário</p>
+
+                                <p class="descricao_p">Projeto de uma painel de acesso, tela sem poluição de texto sendo objetivo, busca trazer um designer mais intuitivo para o usuário</p>
 
                             <div class="buttons">
                                 <a class="btn p_site" href="#">Site</a>
@@ -69,41 +71,45 @@
                     </div>
                 </div>
 
-                <div class="projeto_esquerda">
+                <div class="projeto_esquerda project">
                     <div class="left">
                         <img class="left_img img_pm" src="assets/projetos/projeto_vazio/projeto_vazio.jpg">
                     </div>
                     <div class="rigth">
-                        <img class="left_img img_p" src="assets/projetos/projeto_vazio/projeto_vazio.jpg">
+                        <img class="left_img img_p" id="img_login_dragon" src="assets/projetos/projeto_vazio/projeto_vazio.jpg">
 
                         <div class="descricao">
-                            <p> NOME DO PROJETO</p>
+                            <p>TITULO PARA PROJETO</p>
                         
                             <div class="p1_tec">
                                 <h1>TECNOLOGIAS USADAS:</h1>
-                                <img src="" id="p1_html5">
-                                <img src="" id="p1_css3">
+                                <img src="assets/linguagens/html5.png" class="p_html5">
+                                <img src="assets/linguagens/css3.png" class="p_css3">
                             </div>
-                            <p class="descricao_p">Texto do projeto</p>
+
+                                <p class="descricao_p">Projeto vazio</p>
 
                             <div class="buttons">
                                 <a class="btn p_site" href="#">Site</a>
                                 <a class="btn p_cod" href="#">Código</a>
                             </div>
-                            
+
+
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-            </div>
         </div>
     </main>
     <h1 class="links_cont">CONTATOS</h1>
-    <footer class="contatos" id="contatos">
+    <footer class="footer-container">
+        <section class="contact" id="contact">
+            <div class="container" data-aos="fade-right" data-aos-delay="200">
+                <h2>Entre em contato</h2>
+                <a href="mailto:douglaslimaaa2328@gmail.com">
+                    <h3>douglaslimaaa2328@gmail.com</h3>
+                </a>
+            </div>
+        </section>
         <div class="infos">
             <a class="container-link" href="https://www.linkedin.com/in/douglas-lima-98b618244/" target="_blank">
                 <img src="assets/icons/linkedin.png" alt="">
@@ -114,6 +120,12 @@
                     <p style="color: rgb(236, 92, 8); padding-top: 0.3em;" >Git Hub</p>                            
             </a>
         </div>
+            <div class="container-scroll">
+                <div class="btn-scroll">
+                    <img src="assets/icons/arrow.png" alt="">
+                    <h4>Voltar ao topo</h4>
+                </div>
+            </div>
     </footer>
 
     <script src="script.js"></script>
