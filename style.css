@@ -107,7 +107,7 @@ body {
         display: flex;
         flex-direction: row;
         width: 100% auto;
-        height: 1140px;
+        height: 100vh;
         background: var(--background-color);
     }
 
