@@ -316,14 +316,12 @@ h3 {
     color: var(--text-color2);
     font-size: 1em;
     padding-left: 2em;
-    height: 1.5em;
-    width: 100% auto;
+    height: 90px;
 }
 .repositorio .rigth .descricao .p1_tec h1{
     color: var(--text-color4);
     font-size: 1em;
     padding-left: 2em;
-    width: 100% auto;
     height: 1.5em;
 }
 
@@ -336,7 +334,7 @@ h3 {
     
 }
 
-.p1_tec .p_html5, .p_css3 {
+.p1_tec .p_html5, .p_css3, .p_js {
     height: 3em;
 
 }
@@ -472,7 +470,7 @@ h3 {
         height: 900px;
     }
 
-    .apr{
+        .apr{
         padding-bottom: 17em;
     }
 
@@ -520,6 +518,8 @@ h3 {
     }
 
     .repositorio .rigth .descricao {
+        display: flex;
+        padding-right: 60px;
         height: 260px;
         width: 250px;
     }
@@ -530,7 +530,7 @@ h3 {
 
     .repositorio .rigth .descricao p{
         font-size: 0.9em;
-        width: 90% auto;
+        width: 240px;
     }
 
     .buttons {
@@ -545,6 +545,7 @@ h3 {
      
      .buttons .p_site {
          font-size: 1em;
+         margin-left: 60px;
      }
      
      .buttons .p_cod {
